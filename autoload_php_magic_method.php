@@ -8,11 +8,9 @@ class logger {
 		
 	}
 	
-	
 }
 $obj1=new logger();
 $obj1->log("satpal");
-
 
 class user {
 	
@@ -20,16 +18,13 @@ class user {
 		
 	
 	public function cuser(){
-		
-		
+			
 	return $this->var->log("user create");
 		
 	}
-	
-	
+		
 	public function duser(){		
-		
-		
+			
 	return $this->var->log("user delete");
 
 	}
