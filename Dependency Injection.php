@@ -9,8 +9,8 @@ class Logger {
 	}
 	
 }
-$obj1=new Logger();
-$obj1->log("satpal");
+$logger_obj=new Logger();
+$logger_obj->log("hello satpal");
 
 class User {
 	
@@ -19,19 +19,19 @@ class User {
 	
 	public function createUser(){
 			
-	return $this->var->log("user create");
+	return $this->var->log("New user created");
 		
 	}
 		
 	public function deleteUser(){		
 			
-	return $this->var->log("user delete");
+	return $this->var->log("user deleted");
 
 	}
 	
 	public function updateUser(){
 			
-	return $this->var->log("user update");
+	return $this->var->log("user info updated");
 			
 	}
 	public function __construct(Logger $logger_obj){
