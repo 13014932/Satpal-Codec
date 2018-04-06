@@ -8,13 +8,14 @@
 
 
     <title>server side table</title>
+<!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 
 
 
-    <!-- Fonts -->
+   
 
 
 </head>
@@ -26,6 +27,7 @@
                     <div class="panel-heading">Customers</div>
 
                     <div class="panel-body">
+<!-- TABLE CONTAIN ID  NAMED AS datatable	-->				 
                         <table class="table" id="datatable">
                             <thead>
                                 <tr>
@@ -53,7 +55,9 @@
                 "processing": true,
 				"serverSide": true,
 				"lengthMenu" : [10,25,50,100,500,1000], 
+<!-- ROUTE NAMED AS ('api.customers.index')COME FROM api -->				
                 "ajax": "<?= route('api.customers.index') ?>",
+<!-- COLUMNS PRESENT IN DataBase TABLE  TO REPSERNT HTML COLUMNS DATA 	-->
                 "columns": [
                     { "data": "first_name" },
                     { "data": "last_name" },
