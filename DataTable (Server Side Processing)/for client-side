@@ -1,0 +1,14 @@
+        <!----------------------   WHEN WE WENT PERFORM OUR DATATABLE BY CLIENT SIDE  -------------->
+        
+        
+        
+        USE "serverSide" : FALSE.   
+        
+       <!-------------- FOR SERIAL NUMBER WE USE    -------->
+        
+        table.on( 'order.dt search.dt ', function () {                      // here table is 'var' table =  $('#datatable').DataTable({
+                    table.column(1).nodes().each( function (cell, i) {
+                        cell.innerHTML = i+1;
+                    } );
+                } );
+        
