@@ -1,0 +1,17 @@
+!doctype HTML>
+<html>
+<body>
+
+<?php
+
+
+echo "<h1> Welcome To First Laravel "."CURD FORM View<hr></h1>";
+
+
+
+
+?>
+
+
+</body>
+</html>
