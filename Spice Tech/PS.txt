@@ -1,0 +1,221 @@
+1. PHP code MUST use only UTF-8 without BOM.
+2. Class constants MUST be declared in all upper case with underscore separators. 
+
+	class Foo
+		{
+  			  const VERSION = '1.0';
+   			 const DATE_APPROVED = '2012-06-01';
+		}
+
+3. Method names MUST be declared in camelCase().
+
+<-------------------------PSR-2: Coding Style Guide----------------------->
+
+1. Code MUST use 4 spaces for indenting, not tabs.
+
+2. There MUST NOT be a hard limit on line length; the soft limit MUST be 120
+    characters; lines SHOULD be 80 characters or less.
+
+3. Opening braces for classes MUST go on the next line, and closing braces MUST
+ go on the next line after the body.
+
+		class MyClass 
+		{
+			// body;
+		}	
+
+4. Opening braces for methods MUST go on the next line, and closing braces MUST
+    go on the next line after the body.
+
+		public function myFunction()
+
+		{
+
+			// body;
+
+		}
+
+5. Opening braces for control structures MUST go on the same line, and closing
+    braces MUST go on the next line after the body.
+
+			if (expression1) {
+
+				//if body   ;
+
+			} elseif (expression2) {
+			
+				// else if body;
+
+			} else {
+						
+				// else body;
+
+			}
+				
+					
+6. There MUST NOT be more than one statement per line.
+		
+		<?php
+
+			echo "first statment";
+
+			echo "secound statment";	
+		
+		?>	
+
+
+7. PHP keywords MUST be in lower case.
+		
+	a. break	b. do	c. continue	d. else	e. extends	f. interface	g. implement
+
+8.The PHP constants MUST be in lower case.	
+	 
+
+	a.true	b.false	c.null 
+
+9. The Opening braces for the CLASS go on its own line and the closing  braces for the class must go on the next line after the body.
+
+		class MyClass 
+		
+		{
+			
+			// body of class.
+
+		}
+
+10. List of interface may be Split across multiple lines.
+		
+		class MyClass implements 
+
+			interface1,
+			interface2,
+			interface3
+			
+			{
+				
+				// body
+			
+			}
+
+11. Visibility MUST be declared in all properties	
+
+	a. property name should NOT be prefixed with a single underscore to indicate	
+	    protected or private visibility.
+
+		class MyClass
+
+		{
+
+			public $myproperty1 = 12;
+			
+		}
+		
+12. visiblity must be declared in all methods.
+		
+		a. Method names MUST NOT declared with a whitespace after the merhod name.
+		b. There MUST NOT be a space after the opening parethesis.
+		c. There MUST NOT be a space before each comma.
+		d. There MUST be a whitespace after each comma.
+		e. Method argument with default value MUST go at the end of the argument list. 	
+
+		class MyClass 
+	
+		{
+			
+			public function myFunction($arg1, $arg2, $arg3 = [])
+			
+			{
+			
+				//method body			
+
+			}
+			
+
+		}
+
+				
+16. When present the static declartion MUST come after the visibility declartion.
+	
+	b. When present abstract and finel declartion MUST precede the visibility declaration.
+
+
+		abstract class MyClass
+
+		{
+			
+			protected static $myproperty;
+
+			abstract protected function myFunction();
+
+			finel public static function myfunction()
+	
+			{
+
+				// body
+			}		
+
+
+		}
+
+17. When making a method or a function call, there MUST NOT be a space  between the method name and the opening parenthesis.
+	
+	b.There MUST NOT be a space after the opening parenthesis and before the closing parenthesis.
+	c. In the argument list there MUST NOT space before the each comma, and there must be one space after each comma.
+
+		myFunction();
+		
+		$obj->myFunction($arg1);
+		foo::myFunction($arg1, $arg2);
+
+18. There MUST be a space after the control structure keyword.
+	
+	b. There MUST NOT space after the opening parenthesis.
+	c. There MUST NOT a space before the closing parenthesis.
+	d. There MUST be a   one space between the closing and the opening parenthesis.
+	e. The closing brace must be on the next line after the body.
+	f. The body of the each structure must be enclosed by braces.
+
+		if (exp1) {
+			
+			//if body
+
+		} else if (exp2) {
+
+			//else if body
+
+		} else (exp3) {
+			
+			// else body
+		
+		}
+		
+		
+	<-------------for Statment---------------->
+
+	for ($i = 0; $i < 20; $i++) {
+
+		//for body
+
+	}
+
+	<----------------for Each------------------->
+
+		foreach ($iterable as $key => $value) {
+    			
+			// foreach body
+				
+		}	
+	 
+	 		
+
+		 
+
+
+
+
+
+
+
+
+
+		

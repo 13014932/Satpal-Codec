@@ -1,0 +1,56 @@
+/*
+*
+* ProductController --controller , Product as Lib.
+*/
+
+class ProductController extends Controller
+{
+    public function showProducts()
+    {
+        return view('layouts.defaults', ['content' => view('products/productlist')]);
+    }
+
+    public function getProductPaginated()
+    {
+        try{
+
+            $product_datas=new Product();  // $product_datas actual ->$product_data
+            $product_data->getProductsPaginatedData();
+
+            return $product_data;
+
+        }
+        catch (\Exception $e)
+        {
+            throw new \Exception('Data not avaialable');
+        }
+
+    }
+}
+
+/*
+*
+*In  ProductTest 
+*
+*/
+
+class ProductTest extends TestCase
+{
+
+
+    public function testProductController()
+    {
+
+// your expected code goes here
+
+        $this->expectException(\Exception::class);             //assert the Exception class   --to test Exception is thrown from defined class.
+        $this->expectExceptionMessage("Data not avaialable");  //assert the Exception massage --to test Exception masaage is thrown what you expect.
+
+// your actual code goes here
+
+        $product_return= new Product();
+         $product_return->getProductPaginated();
+
+    }
+
+}

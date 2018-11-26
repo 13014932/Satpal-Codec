@@ -1,0 +1,47 @@
+namespace Tests\Feature;
+
+use Tests\TestCase;
+use Facebook\WebDriver\Remote\RemoteWebDriver;
+use Facebook\WebDriver\WebDriverBy;
+
+
+use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+class BrowserStackTest extends TestCase
+{
+    /**
+     * A basic test example.
+     *
+     * @return void
+     */
+
+
+    public function testExample()
+    {
+
+
+        $caps = array(
+            "browser" => "Chrome",
+            "browser_version" => "62.0",
+            "os" => "Windows",
+            "os_version" => "10",
+            "resolution" => "1024x768"
+        );
+
+        $web_driver = RemoteWebDriver::create("https://yourbrowserstackURL", $caps);
+        $web_driver->get("https://google.com");
+
+
+    $element = self::$driver->findElement(WebDriverBy::name("q"));
+        $element->sendKeys("BrowserStack");
+        $element->submit();
+        $this->assertEquals('BrowserStack - Google Search', self::$driver->getTitle());
+       
+
+        print $web_driver->getTitle();
+        $web_driver->quit();
+
+        $this->assertTrue(true);
+    }
+}
