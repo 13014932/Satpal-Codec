@@ -1,0 +1,35 @@
+
+<students>
+	<student id='1'>
+		<name>satpal</name>
+		<rollno>1234</rollno>
+		<class>12</class>
+		</student>
+		
+		<student id='1'>
+		<name>satpal</name>
+		<rollno>1234</rollno>
+		<class>12</class>
+		</student><student id='1'>
+		<name>satpal</name>
+		<rollno>1234</rollno>
+		<class>12</class>
+		</student><student id='1'>
+		<name>satpal</name>
+		<rollno>1234</rollno>
+		<class>12</class>
+		</student>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+</students>

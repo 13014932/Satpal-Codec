@@ -1,0 +1,58 @@
+
+.button:hover
+{
+	
+	 background-color: #e7e7e7;
+    color: black;
+	
+}
+.operation:hover
+{
+	background-color: #4CAF50;
+    color: white;
+}
+.operation_boundary {
+     
+   
+    border: 2px solid #4CAF50;
+}
+textarea{
+	width:167px;
+	
+}
+.c{
+	
+		background-color:#ffe066;
+}
+
+fieldset
+{
+	width:300px;
+	background-image: url("css_testt.jpg");
+	height:300px;
+}
+.a
+{
+
+background-image: url("css_testt.jpg");
+}
+.textbox2
+{
+	font-weight: bold;
+	
+}
+.ac
+{
+	
+	background-color:#ff6666;
+	
+	
+}
+
+
+
+
+
+
+
+

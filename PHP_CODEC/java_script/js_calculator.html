@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head><title>Javascript Calculator _khatana.satpal</title></head>
+<body>
+<link rel="stylesheet" type="text/css" href="style_c.css" media="screen" />
+<script src="js_c.js"></script>
+<center>
+<fieldset ><legend>JavaScript Calculator </legend>
+	
+
+<input type="text" id="textbox1" value="" readonly ><br><br>
+<input type="text" id="textbox2" value="" class="textbox2" onkeyugp="value_copy()"  autofocus placeholder="Enter a number" ><br><br>
+				
+				<button id="num1"  onclick="numone()" class="button">1</button>				
+				<button id="num2"  onclick="numtwo()" class="button">2</button>	
+				<button id="num3"  onclick="numthree()"class="button">3</button>
+				<button id="num4"  onclick="numfour()"class="button">4</button><br><br>	
+				<button id="num5"  onclick="numfive()"class="button">5</button>	
+				<button id="num6"  onclick="numsix()"class="button">6</button>	
+				<button id="num7"  onclick="numseven()"class="button">7</button>	
+				<button id="num8"  onclick="numeight()"class="button">8</button><br><br>
+				<button id="num9"  onclick="numnine()"class="button">9</button>
+							
+				<button id="sum" onclick="sum() ; document.getElementById('textbox2').focus();" class="operation operation_boundary ">+</button>
+				<button id="sub" onclick="sub() ; document.getElementById('textbox2').focus();"class="operation operation_boundary ">--</button>	
+				<button id="mul"  onclick="mul() ; document.getElementById('textbox2').focus();" class="operation operation_boundary ">*</button><br><br>	
+				<button id="clear" class="ac" onclick="clr() ; document.getElementById('textbox2').focus(); " >AC</button>
+				<button id="cut"  onclick="wrong_cut() ; document.getElementById('textbox2').focus();" class="c">C</button>
+				<button id="equalto" onclick="equalto()" class="operation">Answer</button><br><br>
+				
+				
+				
+					
+
+			
+
+<a href="file:///C:/xampp/htdocs/PHP_CODEC/java_script/js_calculator.html"><input type="button" value="REFRESH"></a>
+			
+										
+</fieldset>
+</center>
+
+
+
+</body>
+</html>

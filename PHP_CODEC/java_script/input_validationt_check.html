@@ -1,0 +1,43 @@
+<!doctypr HTML>
+<html>
+<body>
+
+<script>
+function required(){
+if(document.getElementById("textbox").value==""){
+document.getElementById("textbox").style.borderColor='red';
+document.getElementById("textbox").style.backgroundColor='blue';
+return false;
+}else{
+return true;
+}
+}
+</script>
+<style>
+input:invalid
+{
+
+ border : 2px solid red;
+}
+.a:hover
+{
+background-Color :#4CAF50;
+border : 2px solid red;
+}
+</style>
+<form method="POST" name="form1" onsubmit="return required()" >
+
+
+					<input type="text" name="textbdox" id="textbox" value="" >
+
+					<input type="submit"  name="submit" class="a">
+
+</form>
+
+
+
+
+
+
+</body>
+</html>
